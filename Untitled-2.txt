@@ -1,0 +1,13 @@
+import RPi.GPIO as G
+import time
+
+G.setmode (G.Board)
+G.setup(7, G.OUT)
+
+led = G.PMW(7,100)
+
+while True:
+    led-start(0)
+    for in i range (0,100,25)
+        led.ChangeDutyCycle(i)
+        time.sleep(0.8)
